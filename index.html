@@ -28,7 +28,7 @@
             margin: 0 auto 2rem auto;
             padding: 20px 0;
             border-radius: 0 0 5px 5px;
-            background-image: linear-gradient(#b9dff8,#3498db, #3498db);
+            background-image: linear-gradient(#b9dff8,#3498db, #147cc0);
         }
 
         header h1 {
@@ -78,8 +78,7 @@
         }
 
         h2 {
-            color: #444;
-            border-bottom: 2px solid #3498db;
+            color: #3498db;
             padding-bottom: 0.5rem;
             margin-top: 0;
         }
@@ -140,6 +139,10 @@
             margin-top: 2rem;
         }
 
+        .job {
+            color: #333;
+        }
+
         @media (max-width: 768px) {
             .contact-info {
                 flex-direction: column;
@@ -151,7 +154,7 @@
     <header>
         <div class="container">
             <h1>Amin Zaherannak</h1>
-            <h2>Mobile and Frontend Developer</h2>
+            <h2 class="job">Mobile and Frontend Developer</h2>
             <div class="contact-info">
                 <a href="tel:+989362204862">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -198,22 +201,24 @@
                 <h3>Mobile and Frontend Developer</h3>
                 <p>Shakeylead, Iran - Tehran | April 2022 - Present</p>
                 <ul>
-                    <li>Rewrote the entire Emzame digital signature app using React Native, reducing APK size by 35% and cutting dependencies by 45%</li>
+                    <li>Rewrote the entire <a href="https://emza.me/%d8%a7%d9%be%d9%84%db%8c%da%a9%db%8c%d8%b4%d9%86/" target="_blank">Emzame</a> digital signature app from scratch using React Native, analyzing the original app and leveraging AI tools to reduce the APK size by 35% and cut dependencies by 45%</li>
                     <li>Published Android and iOS apps on corresponding stores</li>
-                    <li>Developed a native module with Kotlin to replace a 3rd-party digital signature SDK</li>
+                    <li>Developed a native module with Kotlin, utilizing AI tools to replace a proprietary 3rd-party digital signature SDK, reducing business dependencies</li>
                     <li>Created patches to improve third-party dependencies</li>
-                    <li>Collaborated on maintaining five distinct React and Next.js apps</li>
+                    <li>Collaborated on maintaining five distinct React and Next.js apps, including admin dashboards and <a href="https://shakeylead.com/%d8%a7%d8%ad%d8%b1%d8%a7%d8%b2-%d9%87%d9%88%db%8c%d8%aa-%d8%ba%db%8c%d8%b1-%d8%ad%d8%b6%d9%88%d8%b1%db%8c-%d8%b3%d8%ac%d8%a7%d9%85/" target="_blank">Ashname</a> authentication solution</li>
                 </ul>
             </div>
             <div class="experience-item">
                 <h3>Mobile and Frontend Developer</h3>
                 <p>Hamyar Koosha, Iran - Dezful | July 2020 - March 2022</p>
                 <ul>
-                    <li>Developed React and React Native apps, optimizing UI performance</li>
+                    <li>Developed and published the first version of <a class="link-arrow" href="https://reportplus.ir/" target="_blank">Report Plus</a> app using React Native</li>
+                    <li>Contributed to development and maintenance of <a href="https://dgbuilding.ir/" target="_blank">Digibuilding</a> app and multiple React admin dashboards</li>
                     <li>Led a team of 5 developers in building and maintaining codebases for two projects</li>
                     <li>Refactored legacy code and introduced agile practices</li>
                     <li>Documented workflows in a private wiki for onboarding and knowledge sharing</li>
                     <li>Managed user testing and translated feedback into improvements</li>
+                    <li>Converted customer requirements into use cases and project specs</li>
                 </ul>
             </div>
         </section>
