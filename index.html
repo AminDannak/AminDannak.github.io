@@ -78,7 +78,7 @@
         }
 
         h2 {
-            color: #3498db;
+            color: #147cc0;
             padding-bottom: 0.5rem;
             margin-top: 0;
         }
@@ -143,9 +143,29 @@
             color: #333;
         }
 
+        .about-image {
+            max-width: 12rem;
+            max-height: 12rem;
+            border-radius: 6rem;
+            object-fit: contain;
+            margin-right: 2rem;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
         @media (max-width: 768px) {
             .contact-info {
                 flex-direction: column;
+            }
+            .about {
+                flex-direction: column;
+            }
+            .about-image {
+                margin-bottom: 2rem;
             }
         }
     </style>
@@ -182,17 +202,22 @@
     </header>
 
     <main class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>
-                I'm a passionate Mobile and Frontend Developer with extensive experience in React, React Native, and Next.js. 
-                I specialize in creating efficient, user-friendly applications and have a track record of optimizing performance 
-                and reducing dependencies. With a background in both mobile and web development, I bring a versatile skill set 
-                to every project.
-            </p>
-            <p>
-                (or at least that's what the AI who wrote this thinks about me 😉)
-            </p>
+        <section class="about">
+            <div>
+                <img src="./amin.jpeg" class="about-image"/>
+            </div>
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate Mobile and Frontend Developer with extensive experience in React, React Native, and Next.js. 
+                    I specialize in creating efficient, user-friendly applications and have a track record of optimizing performance 
+                    and reducing dependencies. With a background in both mobile and web development, I bring a versatile skill set 
+                    to every project.
+                </p>
+                <p>
+                    (or at least that's what the AI who wrote this thinks about me 😉)
+                </p>
+            </div>
         </section>
 
         <section>
