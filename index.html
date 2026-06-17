@@ -143,6 +143,17 @@
             font-size: 0.9rem;
         }
 
+        .status-badge {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #3498db;
+            padding: 0.15rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            vertical-align: middle;
+        }
+
         .download-btn {
             display: inline-block;
             background-color: #ffd269;
@@ -275,10 +286,10 @@
             <div>
                 <h2>About Me</h2>
                 <p>
-                    With <strong>a decade</strong> of experience in software development, I specialize in building scalable, efficient applications for <strong>mobile</strong>, <strong>web</strong>, and desktop platforms using <strong>React</strong>, <strong>React Native</strong>, and modern frontend technologies. 
+                    With <strong>a decade</strong> of experience, I build scalable applications for <strong>mobile</strong>, <strong>web</strong>, and desktop using <strong>React</strong>, <strong>React Native</strong>, and <strong>Next.js</strong> — from production apps to admin dashboards and client-facing products.
                 </p>
                 <p>
-                    I’m highly collaborative, excel in teamwork, and bring strong <strong>soft skills</strong> to every project. Passionate about <strong>documentation</strong> and <strong>knowledge sharing</strong>, I’ve also created a comprehensive <a href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%AF%DB%8C%D8%AA-%DB%8C%DA%A9-%D8%A8%D8%A7%D8%B1-%D9%87%D9%85%DB%8C%D8%B4%D9%87-mk4436/" target="_blank">course</a> on Git and GitHub.
+                    I'm collaborative, value <strong>clean architecture and documentation</strong>, and created a <a href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%AF%DB%8C%D8%AA-%DB%8C%DA%A9-%D8%A8%D8%A7%D8%B1-%D9%87%D9%85%DB%8C%D8%B4%D9%87-mk4436/" target="_blank">course</a> on Git and GitHub. Currently freelancing, with recent focus on the <strong>Report Plus</strong> admin platform and full-stack web development.
                 </p>
               
             </div>
@@ -287,8 +298,19 @@
         <section class="circuit-board-bg to-appear">
             <h2>Work Experience</h2>
             <div class="experience-item">
+                <h3>Freelance — Mobile and Frontend Developer</h3>
+                <p class="company">Remote | February 2026 - Present</p>
+                <p class="company">Freelance developer delivering production web and mobile applications for clients in civil engineering and e-commerce.</p>
+                <ul>
+                    <li><strong>Sole frontend developer</strong> on the <strong>Report Plus</strong> admin panel for Hamyar Koosha — a production web admin for building supervision and engineering reporting — built with <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TanStack Query</strong>, <strong>React Hook Form</strong>, and <strong>Zod</strong>.</li>
+                    <li>Implemented <strong>10 admin sections</strong> across dashboard analytics, engineers, reports, projects, transcripts, subscriptions, support tickets, system logs, funnels, and system configuration — including list/detail pages, forms, and REST API integration.</li>
+                    <li>Established a <strong>maintainable frontend structure</strong> with feature-based modules, typed API contracts, React Query data layer, URL-synced pagination/filter state, and shared UI patterns for tables, filters, and forms.</li>
+                    <li>Built <strong>RTL-ready admin UI</strong> with Jalali date support, responsive layouts, and dashboard charts (<strong>Recharts</strong>) for operational metrics.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
                 <h3>Mobile Developer at Hashthink</h3>
-                <p class="company">🇨🇦 Canada, Toronto (Remote) | March 2025 - Present</p>
+                <p class="company">🇨🇦 Canada, Toronto (Remote) | March 2025 - January 2026</p>
                 <p class="company">Hashthink is an <strong>international</strong> software company that develops <strong>cutting-edge AI</strong> and <strong>enterprise</strong> software solutions.</p>
                 <ul>
                     <li>Partnered directly with <strong>English-speaking stakeholders</strong> to translate <strong>business needs</strong> into technical <strong>requirements</strong> and actionable development tasks.</li>
@@ -322,13 +344,31 @@
                     <li><strong>Led a team of 5 developers</strong>, implementing <strong>agile</strong> practices to accelerate product development and delivery.</li>
                     <li>Conducted <strong>user testing</strong>, gathering feedback to refine and enhance product functionality.</li>
                     <li><strong>Analyzed, reviewed, and optimized components</strong> using modern tools for maintainability and functionality.</li>
-
+                    <li>Returned in <strong>2026</strong> as a freelance developer to build the new <strong>Report Plus</strong> admin panel for the platform.</li>
                 </ul>
             </div>
         </section>
 
         <section class="circuit-board-bg to-appear">
             <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Report Plus Admin Panel (2026)</h3>
+                <p>
+                    Production <strong>admin panel</strong> for <strong>Report Plus</strong>, Hamyar Koosha's building supervision platform. A <strong>Next.js</strong> frontend consuming a REST API, covering reports, engineers, projects, subscriptions, tickets, and related admin workflows. Built as the <strong>sole frontend developer</strong>.
+                </p>
+                <p>Next.js · React · TypeScript · TanStack Query · Zod · React Hook Form · Tailwind CSS · Recharts</p>
+                <ul>
+                    <li>Multi-section admin dashboard with search, filters, pagination, and detail views</li>
+                    <li>Feature-based code organization with typed API layer and React Query</li>
+                    <li>RTL layout with Jalali calendar support and dashboard analytics</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Online Shop — E-commerce Platform (2026, In Progress) <span class="status-badge">In Progress</span></h3>
+                <p>
+                    Full-stack <strong>e-commerce</strong> application in early development for an online retail business. Built with <strong>Next.js</strong>, <strong>Drizzle ORM</strong>, <strong>Zod</strong>, <strong>React Hook Form</strong>, and <strong>Tailwind CSS</strong>. Currently focused on core storefront and product foundations.
+                </p>
+            </div>
             <div class="project-item">
                 <h3>Madar Super App POS (2025)</h3>
                 <p>
@@ -416,6 +456,12 @@
                 <li>Axios</li>
                 <li>OOP</li>
                 <li>Design Patterns</li>
+                <li>TanStack Query</li>
+                <li>Zod</li>
+                <li>React Hook Form</li>
+                <li>Drizzle ORM</li>
+                <li>Recharts</li>
+                <li>shadcn/ui</li>
             </ul>
         </section>
 
