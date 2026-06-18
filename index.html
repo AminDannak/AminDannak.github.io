@@ -167,12 +167,26 @@
         }
 
         h2 {
-            font-size: 0.8125rem;
+            font-size: 1.0625rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
             margin: 0 0 1.75rem;
-            color: var(--text-faint);
+            color: var(--text-muted);
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .section-title-icon {
+            width: 1.35rem;
+            height: 1.35rem;
+            flex-shrink: 0;
+            color: var(--accent);
+            opacity: 0.9;
         }
 
         .experience-item, .project-item {
@@ -521,7 +535,10 @@
                 <img src="./amin.webp" class="about-image"/>
             </div>
             <div>
-                <h2>About Me</h2>
+                <h2 class="section-title">
+                    <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    About Me
+                </h2>
                 <p>
                     I'm a mobile and frontend developer with <strong>a decade</strong> of experience shipping <strong>React</strong>, <strong>React Native</strong>, and <strong>Next.js</strong> products — from fintech and digital signature apps to AI-powered mobile tools and production admin dashboards.
                 </p>
@@ -533,68 +550,14 @@
         </section>
 
         <section class="to-appear">
-            <h2>Skills</h2>
-            <div class="skills-groups">
-                <div class="skills-group">
-                    <h3 class="skills-group-title">Languages</h3>
-                    <ul class="skills-list">
-                        <li>TypeScript</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div class="skills-group">
-                    <h3 class="skills-group-title">Frontend</h3>
-                    <ul class="skills-list">
-                        <li>React</li>
-                        <li>Next.js</li>
-                    </ul>
-                </div>
-                <div class="skills-group">
-                    <h3 class="skills-group-title">Mobile</h3>
-                    <ul class="skills-list">
-                        <li>React Native</li>
-                        <li>Expo</li>
-                        <li>Expo EAS</li>
-                    </ul>
-                </div>
-                <div class="skills-group">
-                    <h3 class="skills-group-title">Data &amp; APIs</h3>
-                    <ul class="skills-list">
-                        <li>TanStack Query</li>
-                        <li>Redux</li>
-                        <li>Axios</li>
-                        <li>Zod</li>
-                        <li>React Hook Form</li>
-                        <li>Drizzle ORM</li>
-                    </ul>
-                </div>
-                <div class="skills-group">
-                    <h3 class="skills-group-title">UI &amp; Styling</h3>
-                    <ul class="skills-list">
-                        <li>Tailwind CSS</li>
-                        <li>shadcn/ui</li>
-                        <li>Recharts</li>
-                    </ul>
-                </div>
-                <div class="skills-group">
-                    <h3 class="skills-group-title">Practices</h3>
-                    <ul class="skills-list">
-                        <li>Git</li>
-                        <li>OOP</li>
-                        <li>Design Patterns</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="to-appear">
-            <h2>Work Experience</h2>
+            <h2 class="section-title">
+                <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                Work Experience
+            </h2>
             <details class="accordion experience-item" open>
                 <summary>
                     <div class="accordion-head">
-                        <span class="accordion-title">Freelance — Mobile and Frontend Developer</span>
+                        <span class="accordion-title">🌍 Freelance — Mobile and Frontend Developer</span>
                         <span class="accordion-meta">Remote · February 2026 – Present</span>
                     </div>
                     <span class="accordion-chevron" aria-hidden="true"></span>
@@ -668,7 +631,93 @@
         </section>
 
         <section class="to-appear">
-            <h2>Projects</h2>
+            <h2 class="section-title">
+                <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                Skills
+            </h2>
+            <div class="skills-groups">
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Languages</h3>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6)</li>
+                        <li>TypeScript</li>
+                        <li>HTML</li>
+                        <li>Kotlin</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Frontend &amp; Mobile</h3>
+                    <ul class="skills-list">
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Next.js</li>
+                        <li>Expo</li>
+                        <li>Electron</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">UI &amp; Styling</h3>
+                    <ul class="skills-list">
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>Tailwind</li>
+                        <li>NativeWind</li>
+                        <li>MUI</li>
+                        <li>shadcn/ui</li>
+                        <li>React Native Reusables</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Backend Integration &amp; Real-Time</h3>
+                    <ul class="skills-list">
+                        <li>RESTful APIs</li>
+                        <li>Server-Sent Events (SSE)</li>
+                        <li>WebSockets</li>
+                        <li>Axios</li>
+                        <li>RTK Query</li>
+                        <li>AI Service Integration</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">State Managers</h3>
+                    <ul class="skills-list">
+                        <li>Context API</li>
+                        <li>Redux</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Tools &amp; Techniques</h3>
+                    <ul class="skills-list">
+                        <li>Git</li>
+                        <li>Google Play Store Publishing</li>
+                        <li>TestFlight</li>
+                        <li>Matomo</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Methodologies &amp; Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li>Agile</li>
+                        <li>Stakeholder Communication</li>
+                        <li>Requirements Gathering</li>
+                        <li>Cross-functional Collaboration</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Testing Tools</h3>
+                    <ul class="skills-list">
+                        <li>Jest</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="to-appear">
+            <h2 class="section-title">
+                <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Projects
+            </h2>
             <details class="accordion project-item" open>
                 <summary>
                     <div class="accordion-head">
@@ -811,7 +860,21 @@
         </section>
 
         <section class="to-appear">
-            <h2>Publications &amp; Content Creation</h2>
+            <h2 class="section-title">
+                <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"></path></svg>
+                Education
+            </h2>
+            <div class="experience-item">
+                <h3>Master's Degree in Structural Engineering</h3>
+                <p>Amirkabir University of Technology · Sep 2016 – Feb 2018</p>
+            </div>
+        </section>
+
+        <section class="to-appear">
+            <h2 class="section-title">
+                <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Publications &amp; Content Creation
+            </h2>
             <details class="accordion project-item">
                 <summary>
                     <div class="accordion-head">
@@ -839,7 +902,10 @@
         </section>
 
         <section class="to-appear">
-            <h2>Open Source Contributions</h2>
+            <h2 class="section-title">
+                <svg class="section-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Open Source Contributions
+            </h2>
             <div class="project-item">
                 <h3>React (2024)</h3>
                 <p>Contributed to the React repository by improving documentation accuracy.</p>
