@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div id="resume-root"></div>
+    <script type="module">
+        import { loadResumeData, renderResume } from "./js/render-resume.js";
+
+        loadResumeData()
+            .then((data) => {
+                renderResume(data);
+                document.body.dataset.rendered = "true";
+            })
+            .catch((error) => {
+                console.error(error);
+                document.getElementById("resume-root").textContent =
+                    "Failed to load resume data.";
+            });
+    </script>
+</body>
+</html>
