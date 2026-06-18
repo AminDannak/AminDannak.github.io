@@ -1,20 +1,19 @@
-function initPortfolioUI() {
+document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach((entry) => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                obs.unobserve(entry.target);
+                observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.2 });
 
-    sections.forEach((section) => observer.observe(section));
-    initAccordions();
-}
+    sections.forEach(section => observer.observe(section));
 
-window.addEventListener("portfolio:rendered", initPortfolioUI);
+    initAccordions();
+});
 
 function initAccordions() {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
